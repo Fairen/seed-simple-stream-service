@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Fairen/seed-simple-stream-service.svg?branch=master)](https://travis-ci.org/Fairen/seed-simple-stream-service)
+[![Coverage Status](https://coveralls.io/repos/github/Fairen/seed-simple-stream-service/badge.svg?branch=master)](https://coveralls.io/github/Fairen/seed-simple-stream-service?branch=master)
 # @fairen/seed-simple-stream-service
 
 A basic and generic Angular Service
