@@ -1,12 +1,17 @@
 import { SimpleStreamService } from './simple-stream.service';
 import { inject, TestBed } from '@angular/core/testing';
 
+export function simpleStreamServiceFactory() {
+  return new SimpleStreamService();
+}
+
 describe('SimpleStreamService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [
         {
-          provide: SimpleStreamService
+          provide: SimpleStreamService,
+          useFactory: simpleStreamServiceFactory,
         }
       ]
     });
