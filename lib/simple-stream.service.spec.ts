@@ -15,5 +15,5 @@ describe('SimpleStreamService', () => {
   it('should be created', inject([SimpleStreamService], (service: SimpleStreamService) => {
     expect(service).toBeTruthy();
   }));
-  
+
 });

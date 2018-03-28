@@ -11,7 +11,7 @@ export class SimpleStreamService {
   constructor() { }
 
   public publishIntoStream(message: any) {
-    this._streamSubject.next(message)
+    this._streamSubject.next(message);
   }
 
 }
