@@ -1,0 +1,13 @@
+language : node_js 
+node_js :  
+  - stable 
+before_script:
+  - ln -f lib/simple-stream.service.ts tests/src/app/shared/services/simple-stream.service.ts
+  - ln -f lib/simple-stream.service.spec.ts tests/src/app/shared/services/simple-stream.service.spec.ts
+  - cd tests
+  - npm install 
+script:  
+  - npm run ci:test
+  - npm run ci:lint
+# Send coverage data to Coveralls
+after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
